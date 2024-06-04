@@ -4,8 +4,6 @@ import { AppService } from './app.service';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { Setting } from './models/setting.model';
 import { Account } from './models/account.model';
-import { AccountsController } from './accounts/accounts.controller';
-import { SettingsController } from './settings/settings.controller';
 import { SettingsModule } from './settings/settings.module';
 import { AccountsModule } from './accounts/accounts.module';
 
@@ -23,7 +21,7 @@ import { AccountsModule } from './accounts/accounts.module';
     SettingsModule,
     AccountsModule,
   ],
-  controllers: [AppController, AccountsController, SettingsController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}

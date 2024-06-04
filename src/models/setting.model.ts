@@ -12,6 +12,9 @@ import { Account } from './account.model';
   timestamps: true,
   paranoid: true,
   tableName: 'settings',
+  createdAt: 'created_at',
+  updatedAt: 'updated_at',
+  deletedAt: 'deleted_at',
 })
 export class Setting extends Model {
   @Column({
